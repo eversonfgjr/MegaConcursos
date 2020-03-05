@@ -1,0 +1,16 @@
+Questão
+{
+id,
+banca,
+ano,
+cargo,
+disciplina
+assuntos: [
+],
+tipo,
+instituição,
+modalidade,
+área de formação
+}
+
+

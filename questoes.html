@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/questoes.css">
+
+</head>
+
+<body>
+    <header>
+        <!-- <img src="https://cdn.onlinewebfonts.com/svg/img_568656.png" class="img-rounded" alt="" style="width:30px;height:30px; float:right"> -->
+    </header>
+
+    <div class="navbar-header">
+        <nav class="navbar-expand-xl navbar-dark">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Questões</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Notícias</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Disciplinas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Mais Informações</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="submenu">
+        <form class="form-signin" action="">
+            <button id="criar-filtro-btn" class="collapsible btn btn-lg btn-light fas fa-filter" data-toggle="collapse"
+                data-target="#collapseFiltro">
+                Criar Novo Filtro
+            </button>
+
+        </form>
+    </div>
+    <!-- <div style="border: 2px solid blue; height: 60px; width: 40px;">
+
+    </div> -->
+    <div class="collapse" id="collapseFiltro">
+        <div class="card card-body">
+            <form autocomplete="off">
+                <div class="form-group criterio-div">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <select class="form-control">
+                                <option value="-1">Selecione um critério de busca...</option>
+                                <option>Ano</option>
+                                <option>Banca</option>
+                                <option>Cargo</option>
+                                <option>Prova</option>
+                                <option>Tipo de Questão</option>
+                            </select>
+                        </div>
+                        <div class="col-md-4">
+                            <input type="text" class="form-control" name="" id="" placeholder="Ano"></input>
+                        </div>
+                        <div class="col-md-1">
+                            <span class="input-group-btn">
+                                <button id="adicionar-criterio-filtro-btn" class="btn btn-success btn-add"
+                                    type="button">
+                                    <i class="fas fa-plus"></i>
+                                </button>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <div class="row" style="padding: .375rem .85rem;">
+                <small>Aperte <span class="fas fa-plus"></span> para adicionar outro critério de busca
+                    :)</small>
+            </div>
+            <!-- <div class="form-group"> -->
+            <input type="button" value="Filtrar" class="form-control btn btn-primary"></input>
+            <!-- </div> -->
+        </div>
+    </div>
+
+    <section class="content">
+        <div class="questao-row">
+            <div class="questao-header">
+                <div class="col-sm-12">
+
+                </div>
+            </div>
+            <div class="questao-detalhes">
+                <span style="margin-right:10px;">
+                    <strong>Ano:</strong>
+                    2020
+                </span>
+                <span>
+                    <strong>Prova:</strong>
+                    <a href="#">FCC - 2020 - DPE-SP - Defensor Púbico </a>
+                </span>
+            </div>
+            <div class="enunciado-row">
+                <div class="col-sm-12">
+                    <p>Doutrinariamente, a regra-matriz de incidência tributária pode ser dividida nos seus aspectos
+                        antecedentes — que definem a hipótese de incidência — e na obrigação decorrente — que são os
+                        aspectos ligados às consequências da norma. </p>
+                    <p>Segundo a doutrina majoritária, os critérios que integram a parte da hipótese da regra-matriz de
+                        incidência tributária incluem os aspectos</p>
+                </div>
+
+            </div>
+            <div class="alternativas-row">
+                <div class="col-sm-12">
+                    <form action="">
+                        <ul class="list-unstyled">
+                            <li>
+                                <input type="radio" name="radio-opt" id=""> material, espacial e temporal
+                            </li>
+                            <li>
+                                <input type="radio" name="radio-opt" id=""> pessoal, material e quantitativo
+                            </li>
+                            <li>
+                                <input type="radio" name="radio-opt" id=""> temporal, quantitativo e qualitativo
+                            </li>
+                            <li>
+                                <input type="radio" name="radio-opt" id="">
+                                qualitativo, espacial e especial</li>
+                        </ul>
+                    </form>
+                </div>
+            </div>
+            <button id="responder-btn" class="btn btn-info">Responder</button>
+        </div>
+
+        <div class="questao-row">
+            <div class="questao-header">
+                <div class="col-sm-12">
+                    <span class="codigo-questao">#123456</span>
+                    <b>Assuntos:</b>
+                    <a href="#">Direito Tributario</a>
+                </div>
+            </div>
+            <div class="questao-detalhes">
+                <span style="margin-right:10px;">
+                    <strong>Ano:</strong>
+                    2020
+                </span>
+                <span>
+                    <strong>Prova:</strong>
+                    <a href="#">FCC - 2020 - DPE-SP - Defensor Púbico </a>
+                </span>
+            </div>
+            <div class="enunciado-row">
+                <div class="col-sm-12">
+                    <p>Doutrinariamente, a regra-matriz de incidência tributária pode ser dividida nos seus aspectos
+                        antecedentes — que definem a hipótese de incidência — e na obrigação decorrente — que são os
+                        aspectos ligados às consequências da norma. </p>
+                    <p>Segundo a doutrina majoritária, os critérios que integram a parte da hipótese da regra-matriz de
+                        incidência tributária incluem os aspectos</p>
+                </div>
+
+            </div>
+            <div class="alternativas-row">
+                <div class="col-sm-12">
+                    <form action="">
+                        <ul class="list-unstyled">
+                            <li>
+                                <input type="radio" name="radio-opt" id=""><strong> a) </strong> material, espacial e
+                                temporal
+                            </li>
+                            <li>
+                                <input type="radio" name="radio-opt" id=""><strong> b) </strong> pessoal, material e
+                                quantitativo
+                            </li>
+                            <li>
+                                <input type="radio" name="radio-opt" id=""><strong> c) </strong> temporal, quantitativo
+                                e qualitativo
+                            </li>
+                            <li>
+                                <input type="radio" name="radio-opt" id=""><strong> d) </strong>
+                                qualitativo, espacial e especial</li>
+                        </ul>
+                    </form>
+                </div>
+            </div>
+            <button id="responder-btn" class="btn btn-info responder-btn">Responder</button>
+            <div class="questao-barra-inferior">
+                <span class="questao-barra-inferior-tab far fa-comment">
+                    <a data-toggle="modal" href="#comentarios-modal">Comentários</a>
+                </span>
+                <span class="questao-barra-inferior-tab fas fa-poll">
+                    <a href="#">Estatística</a>
+                    </a>
+                </span>
+                <span class="questao-barra-inferior-tab fas fa-book-open">
+                    <a href="#">Caderno</a>
+                </span>
+                <span class="questao-barra-inferior-tab far fa-bell">
+                    <a href="#">Notificar Erro</a>
+                </span>
+            </div>
+        </div>
+
+        <div class="questao-row">
+            <div class="questao-header">
+                <div class="col-sm-12">
+                </div>
+            </div>
+            <div class="questao-detalhes">
+                <span style="margin-right:10px;">
+                    <strong>Ano:</strong>
+                    2020
+                </span>
+                <span>
+                    <strong>Prova:</strong>
+                    <a href="#">FCC - 2020 - DPE-SP - Defensor Púbico </a>
+                </span>
+            </div>
+            <div class="enunciado-row">
+                <div class="col-sm-12">
+                    <p>Doutrinariamente, a regra-matriz de incidência tributária pode ser dividida nos seus aspectos
+                        antecedentes — que definem a hipótese de incidência — e na obrigação decorrente — que são os
+                        aspectos ligados às consequências da norma. </p>
+                    <p>Segundo a doutrina majoritária, os critérios que integram a parte da hipótese da regra-matriz de
+                        incidência tributária incluem os aspectos</p>
+                </div>
+
+            </div>
+            <div class="alternativas-row">
+                <div class="col-sm-12">
+                    <form action="">
+                        <ul class="list-unstyled">
+                            <li>
+                                <input type="radio" name="radio-opt" id=""> material, espacial e temporal
+                            </li>
+                            <li>
+                                <input type="radio" name="radio-opt" id=""> pessoal, material e quantitativo
+                            </li>
+                            <li>
+                                <input type="radio" name="radio-opt" id=""> temporal, quantitativo e qualitativo
+                            </li>
+                            <li>
+                                <input type="radio" name="radio-opt" id="">
+                                qualitativo, espacial e especial</li>
+                        </ul>
+                    </form>
+                </div>
+            </div>
+            <button id="responder-btn" class="btn btn-info">Responder</button>
+        </div>
+
+        <div class="questao-row">
+            <div class="questao-header">
+                <div class="col-sm-12">
+                </div>
+            </div>
+            <div class="questao-detalhes">
+                <span style="margin-right:10px;">
+                    <strong>Ano:</strong>
+                    2020
+                </span>
+                <span>
+                    <strong>Prova:</strong>
+                    <a href="#">FCC - 2020 - DPE-SP - Defensor Púbico </a>
+                </span>
+            </div>
+            <div class="enunciado-row">
+                <div class="col-sm-12">
+                    <p>Doutrinariamente, a regra-matriz de incidência tributária pode ser dividida nos seus aspectos
+                        antecedentes — que definem a hipótese de incidência — e na obrigação decorrente — que são os
+                        aspectos ligados às consequências da norma. </p>
+                    <p>Segundo a doutrina majoritária, os critérios que integram a parte da hipótese da regra-matriz de
+                        incidência tributária incluem os aspectos</p>
+                </div>
+
+            </div>
+            <div class="alternativas-row">
+                <div class="col-sm-12">
+                    <form action="">
+                        <ul class="list-unstyled">
+                            <li>
+                                <input type="radio" name="radio-opt" id=""> material, espacial e temporal
+                            </li>
+                            <li>
+                                <input type="radio" name="radio-opt" id=""> pessoal, material e quantitativo
+                            </li>
+                            <li>
+                                <input type="radio" name="radio-opt" id=""> temporal, quantitativo e qualitativo
+                            </li>
+                            <li>
+                                <input type="radio" name="radio-opt" id="">
+                                qualitativo, espacial e especial</li>
+                        </ul>
+                    </form>
+                </div>
+            </div>
+            <button id="responder-btn" class="btn btn-info">Responder</button>
+        </div>
+
+    </section>
+
+    <footer>
+        <div class="footer-copyright text-center py-3">© 2020 Copyright:
+            <a href="https://mdbootstrap.com/education/bootstrap/"> MDBootstrap.com</a>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="js/questoes.js"></script>
+
+    <div id="comentarios-modal" class="modal fade" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-xl" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="comentario-box">
+                        <!-- <div class="comentario-usr">
+                            
+                        </div> -->
+                        <!-- <div class="com-user col-sm-2" style="flex-direction: column;"> -->
+                        <div class="media">
+                            <div class="media-left">
+                                <img src="https://www.aprovaconcursos.com.br/prod/iesdesite/imagens/sem-foto.gif?2?2020021810030'" class="rounded-circle">
+                            </div>
+                            <div>
+                                <a href="#">John Doe</a>
+                            </div>
+                            <div>membro</div>
+                            <!-- <a href="/questoes-de-concurso/cliente/perfil/3823128">
+                                <span class="avatar avatar-md" style="width: 75px; height:75px;">
+                                </span>
+                                <span class="nome-usuario">Fulano</span>
+                            </a> -->
+                            <div class="media-body">
+                                <h4 class="media-heading">John Doe</h4>
+                                <p>
+                                    Assertiva E
+
+                        1. Erradicar o trabalho infantil, bem como todas as formas de violência e exploração sexual de
+                        crianças e adolescentes nas cadeias produtivas, com base em códigos de conduta e no Estatuto da
+                        Criança e do Adolescente.
+
+                        2. Avançar na implantação da reforma agrária, como forma de inclusão social e acesso aos
+                        direitos básicos, de forma articulada com as políticas de saúde, educação, meio ambiente e
+                        fomento à produção alimentar.
+
+                        3. Fomentar o debate sobre a expansão de plantios de monoculturas que geram impacto no meio
+                        ambiente e na cultura dos povos e comunidades tradicionais.
+
+                        4. Fortalecer políticas públicas de apoio ao extrativismo e ao manejo florestal comunitário
+                        ambientalmente sustentáveis.
+                                </p>
+                            </div>
+                        </div>
+                        
+                        
+
+                    </div>
+                    <div class="comentario-box">
+                        <div class="media">
+                            <div class="media-left">
+                                <img src="https://twitter.com/SF_Moro/photo" class="rounded-circle">
+                            </div>
+                            <div>
+                                <a href="#">Sérgio Moro</a>
+                            </div>
+                            <div>membro</div>
+                            <!-- <a href="/questoes-de-concurso/cliente/perfil/3823128">
+                                <span class="avatar avatar-md" style="width: 75px; height:75px;">
+                                </span>
+                                <span class="nome-usuario">Fulano</span>
+                            </a> -->
+                            <div class="media-body">
+                                <h4 class="media-heading">Sérgio Moro</h4>
+                                <p>
+                                    Essa alteração da lei anticrime foi fundamental. Execução imediata dos veredictos do Tribunal do Júri em caso de assassinatos, ou seja, após a condenação já em primeira instância. Crimes de sangue precisam ter respostas rápidas da Justiça.
+                                </p>
+                            </div>
+                        </div>
+                        
+
+                    </div>
+                    <div class="comentario-box">
+
+
+                    </div>
+                </div>
+
+            </div>
+            <!-- <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Comentários</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <p>Modal body text goes here.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary">Save changes</button>
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div> -->
+        </div>
+    </div>
+</body>
+
+</html>
