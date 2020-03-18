@@ -1,3 +1,21 @@
+function inicializaPagina(){
+    //alert("Ok, pagina inicializada");
+    var primeiraVez = true;
+    $('._3FeAD').on('focus', function(){
+        if(primeiraVez) {
+            primeiraVez = false;
+            $('#escreva-seu-comentario-span').hide();
+            $(this).focus();
+        }
+    });
+
+    $('.barra-inferior-novo-comentario').click(function(){
+        alert('barra-inferior-novo-comentario').
+        $('._3FeAD').focus();
+    });
+} 
+
+
 $(function()
 {
     $(document).on('click', '#adicionar-criterio-filtro-btn', function(e)
@@ -25,3 +43,4 @@ $(function()
 function myFunction() {
     $('.wjdTm').css('display','none');
 }
+

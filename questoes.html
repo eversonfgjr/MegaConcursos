@@ -329,23 +329,44 @@
         <div class="modal-dialog modal-xl" role="document">
             <div class="modal-content">
                 <div class="modal-body">
-
                     <div class="novo-comentario-box">
-                        <!--Area de teste-->
     
-                        <div class="_2i7Ej _14Mgc copyable-area">
-                            <div tabindex="-1" class="_13mgZ">
-                                <div tabindex="-1" class="_3FeAD _1PRhq" >
-                                    <div class="wjdTm" style="visibility: visible;" >
-                                    </div>
-                                    <img src="https://www.aprovaconcursos.com.br/prod/iesdesite/imagens/sem-foto.gif?2?2020021810030'" class="rounded-circle">
-
-                                    Escreva o seu comentário</div>
-                                    <div class="_3u328 copyable-text selectable-text"  data-tab="1" dir="ltr" spellcheck="true" contenteditable="true">
-                                    </div>
+                        <div class="_2i7Ej _14Mgc copyable-area _13mgZ">
+                            <div class="comentario-perfil no-margin-top">
+                                <img src="https://www.aprovaconcursos.com.br/prod/iesdesite/imagens/sem-foto.gif?2?2020021810030'" class="rounded-circle">
+                            </div>
+                            <div class="container-flex-column">
+                                <div tabindex="-1" class="_3FeAD _1PRhq" data-tab="1" dir="ltr" spellcheck="true" contenteditable="true" >
+                                    <span id="escreva-seu-comentario-span" style="color: rgba(0, 0, 0, 0.4); margin-left: 1em;">Escreva o seu comentário</span> 
                                 </div>
-                            </div>    
-                            <button class="btn btn-info publicat-btn">Publicar</button>     
+                                <div class="barra-inferior-novo-comentario">
+                                    <button class="modify-text-btn">B</button>
+                                    <button class="modify-text-btn">I</button>
+                                    <button class="modify-text-btn">U</button>
+                                    <a href="" class="btn publicar-btn">
+                                        <!-- <i class="fas fa-arrow-circle-right"></i> -->
+                                        <img src="https://icon2.cleanpng.com/20180426/kve/kisspng-computer-icons-enter-key-computer-keyboard-5ae2238485f163.2670355915247696685486.jpg" 
+                                             alt="Enter" 
+                                             class="icon-16x16"
+                                             style="opacity: 0.7" >
+                                    </a>
+                                    <!-- <button class="btn btn-info publicat-btn">Responder</button> -->
+                                </div>
+                            </div>
+                        </div>  
+                        <span style="color: rgba(0, 0, 0, 0.7); margin-left: 1em; font-size: 10px;">Exibir comentários ordenados por:</span>  
+                        <!--<select class="form-control form-control-sm" name="" id="">
+                            <option value="">Mais relevantes primeiros</option>
+                            <option value="">Mais recentes primeiro</option>
+                        </select> -->
+                        <label for="" class="ordenacao-option-radio">
+                            <input type="radio" name="opt-radio" checked>Mais relevantes primeiros
+                        </label>
+                        <label for="" class="ordenacao-option-radio">
+                            <input type="radio" name="opt-radio" checked>Mais recentes primeiro
+                        </label>
+                        <!-- <a href="" style="font-size: 10px;">Mais relevantes primeiro</a>
+                        <a href="" style="font-size: 10px;">Mais recentes primeiro</a> -->
                         </div> 
     
                         <!--Fim Area de teste-->
@@ -375,6 +396,8 @@
 
                         4. Fortalecer políticas públicas de apoio ao extrativismo e ao manejo florestal comunitário
                         ambientalmente sustentáveis.
+
+                       
                                 </p>
                             </div>
                         </div>
@@ -409,6 +432,8 @@
                                     <p>
                                         Gostei da analogia feita por Flávio Rocha na questão do PIB: estamos queimando gordura (diminuindo o setor público) e aumentando músculos (o produto vem, principalmente, do setor privado). O PIB não pode ser avaliado de maneira global. É preciso descer aos detalhes.
                                     </p>
+                                    <a href="#" data-command='h2'>H2</a>
+                                    <a href="#" data-command='createlink'><i class='fa fa-link'></i></a>
                                 </div>
                                 <div class="media-interacao">
                                     
@@ -441,18 +466,42 @@
                         </div>
                     </div>
                     <div class="new-comment">
-                        <!-- <textarea id="story" name="story" rols="7" cols="76" placeholder="Escreva um comentário...">
-                        </textarea> -->
-                        <!-- 
-                            Desenha um X
-                            <svg xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 24 24"
-                            width="24"
-                            height="24">
-                                <path fill="currentColor"
-                                    d="M19.1 17.2l-5.3-5.3 5.3-5.3-1.8-1.8-5.3 5.4-5.3-5.3-1.8 1.7 5.3 5.3-5.3 5.3L6.7 19l5.3-5.3 5.3 5.3 1.8-1.8z">
-                                </path>
-                        </svg> -->
+                            <div class="toolbar">
+                                    <a href="#" data-command='undo'><i class='fa fa-undo'></i></a>
+                                    <a href="#" data-command='redo'><i class='fa fa-repeat'></i></a>
+                                    <div class="fore-wrapper"><i class='fa fa-font' style='color:#C96;'></i>
+                                      <div class="fore-palette">
+                                      </div>
+                                    </div>
+                                    <div class="back-wrapper"><i class='fa fa-font' style='background:#C96;'></i>
+                                      <div class="back-palette">
+                                      </div>
+                                    </div>
+                                    <a href="#" data-command='bold'><i class='fa fa-bold'></i></a>
+                                    <a href="#" data-command='italic'><i class='fa fa-italic'></i></a>
+                                    <a href="#" data-command='underline'><i class='fa fa-underline'></i></a>
+                                    <a href="#" data-command='strikeThrough'><i class='fa fa-strikethrough'></i></a>
+                                    <a href="#" data-command='justifyLeft'><i class='fa fa-align-left'></i></a>
+                                    <a href="#" data-command='justifyCenter'><i class='fa fa-align-center'></i></a>
+                                    <a href="#" data-command='justifyRight'><i class='fa fa-align-right'></i></a>
+                                    <a href="#" data-command='justifyFull'><i class='fa fa-align-justify'></i></a>
+                                    <a href="#" data-command='indent'><i class='fa fa-indent'></i></a>
+                                    <a href="#" data-command='outdent'><i class='fa fa-outdent'></i></a>
+                                    <a href="#" data-command='insertUnorderedList'><i class='fa fa-list-ul'></i></a>
+                                    <a href="#" data-command='insertOrderedList'><i class='fa fa-list-ol'></i></a>
+                                    <a href="#" data-command='h1'>H1</a>
+                                    <a href="#" data-command='h2'>H2</a>
+                                    <a href="#" data-command='createlink'><i class='fa fa-link'></i></a>
+                                    <a href="#" data-command='unlink'><i class='fa fa-unlink'></i></a>
+                                    <a href="#" data-command='insertimage'><i class='fa fa-image'></i></a>
+                                    <a href="#" data-command='p'>P</a>
+                                    <a href="#" data-command='subscript'><i class='fa fa-subscript'></i></a>
+                                    <a href="#" data-command='superscript'><i class='fa fa-superscript'></i></a>
+                                  </div>
+                                  <div id='editor' contenteditable>
+                                    <h1>A WYSIWYG Editor.</h1>
+                                    <p>Try making some changes here. Add your own text or maybe an image.</p>
+                                  </div>
                             
                     </div>
                 </div>
@@ -475,6 +524,14 @@
           </div> -->
         </div>
     </div>
+
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            inicializaPagina();
+        });
+    </script>
+
 </body>
 
 </html>

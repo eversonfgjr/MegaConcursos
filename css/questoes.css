@@ -189,6 +189,10 @@ footer {
   font: size 13px;
 }
 
+.no-margin-top {
+  margin-top: 0px;
+}
+
 img.rounded-circle {
   width: 70px;
 }
@@ -229,6 +233,10 @@ img.rounded-circle {
 .like-link {
   /* color: blue; */
   margin-left: 0.5rem;
+}
+
+.modal-content {
+  padding: 8px;
 }
 
 .modal-body {
@@ -275,12 +283,14 @@ img.rounded-circle {
 }
 
 ._3FeAD {
+  width: 95%;
   cursor: text;
   padding-right: 0;
   position: relative;
   flex: 1;
   display: flex;
   overflow: hidden;
+  min-height: 40px;
 }
 
 ._3FeAD .wjdTm {
@@ -296,7 +306,7 @@ img.rounded-circle {
   z-index: 2;
 }
 
-._3FeAD._1PRhq ._3u328 {
+._3FeAD ._1PRhq ._3u328 {
   font-size: 15px;
   font-weight: 400;
   max-height: 100px;
@@ -310,17 +320,35 @@ img.rounded-circle {
   z-index: 1;
 }
 
-.novo-comentario-box {
+.container-flex-column {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
-.publicat-btn {
+.publicar-btn {
   float: right;
-  margin-right: 15px;
-  margin-top: 5px;
-  display: none;
+  /* display: none; */
 }
 
 /*Ajusta o tamanho do pop-up de comentarios*/
 @media (min-width: 1200px) .modal-xl {
   max-width: 1200px;
 }
+
+.icon-16x16 {
+  width: 16px;
+  height: 16px;
+}
+
+.barra-inferior-novo-comentario {
+  max-height: 30px;
+  margin-top: 2px;
+}
+
+.modify-text-btn {
+  opacity: 0.7;
+  margin: 0 4px;
+  display: none;
+}
+
